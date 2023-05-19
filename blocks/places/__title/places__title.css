@@ -55,3 +55,11 @@ line-height: 76px;
         margin-bottom: 32px;
     }
 }
+
+@media all and (max-width: 280px)
+{
+    .places__title{
+        font-size: 24px;
+        line-height: 27px;
+    }
+}
