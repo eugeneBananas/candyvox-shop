@@ -12,7 +12,7 @@
 @media screen and (max-width: 1024px)
 {
     .places__website{
-        width: calc(100% * 440/(1024 - 2 * 1024 * 48/1024)) - 32px;
+        width: calc(100% * 440/(1024 - 2 * 1024 * 48/1024));
         left: 32px;
     }
 }
@@ -20,7 +20,7 @@
 @media screen and (max-width: 768px)
 {
     .places__website{
-        width: calc(100% * 340/(768 - 2 * 768 * 24/768)) - 28px;
+        width: calc(100% * 340/(768 - 2 * 768 * 24/768));
         left: 28px;
     }
 }
@@ -34,7 +34,7 @@
         left: 0;
         margin-bottom: 32px;
         padding: 0 calc(100% * 16 / 320);
-        width: calc(100% - 100% * 460/(1280 - 1280 * 0.115625 * 2) - 40);
+        width: calc(100% - 100% * 460/(1280 - 1280 * 0.115625 * 2));
     }
 }
 
