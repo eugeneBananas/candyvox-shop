@@ -1,0 +1,33 @@
+.places{
+    width: 76.875%;
+    margin: auto;
+}
+
+.places *{
+    transition: .4s all;
+    -webkit-transition: .4s all;
+    -o-transition: .4s all;
+}
+
+@media screen and (max-width: 1024px)
+{
+    .places{
+        width: calc(100% - 2 * 48/1024 * 100%);
+    }
+}
+
+@media screen and (max-width: 768px)
+{
+    .places{
+        width: calc(100% - 2 * 24/768 * 100%);
+    }
+}
+
+
+
+@media all and (max-width: 425px)
+{
+    .places{
+        width: 100%;
+    }
+}

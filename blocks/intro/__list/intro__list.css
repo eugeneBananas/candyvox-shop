@@ -1,0 +1,42 @@
+.intro__list{
+    margin: 0;
+    margin-left:  11.5625%;
+    margin-bottom: 92px;
+    font-family: 'Inter';
+    width: 690px;
+height: 90px;
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 18px;
+/* or 150% */
+
+ 
+}
+
+@media screen and (max-width: 1024px)
+{
+    .intro__list{
+        margin-left: calc(48 * 100% / 1024);
+        margin-bottom: 88px;
+    }
+}
+
+@media screen and (max-width: 768px)
+{
+    .intro__list{
+        margin-left: calc(24 * 100% / 768);
+        margin-bottom: 88px;
+    }
+}
+
+
+@media all and (max-width: 425px)
+{
+    .intro__list{
+        margin: 0;
+        width: initial;
+        padding: 0 calc(16 * 100% / 320);
+        margin-bottom: 64px;
+    }
+}

@@ -1,0 +1,10 @@
+.places__heading {
+    display: flex;
+} 
+
+@media all and (max-width: 425px)
+{
+    .places__heading{
+        flex-direction: column;
+    }
+}

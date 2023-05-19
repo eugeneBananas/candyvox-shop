@@ -1,0 +1,28 @@
+.places__image{
+    width: calc(100% * 460/(1280 - 1280 * 0.115625 * 2));
+    height: 100%;
+}
+
+@media screen and (max-width: 1024px)
+{
+    .places__image{
+        width: calc(100% * 440/(1024 - 2 * 1024 * 48/1024));
+    }
+}
+
+@media screen and (max-width: 768px)
+{
+    .places__image{
+        width: calc(100% * 340/(768 - 2 * 768 * 24/768));
+    }
+}
+
+
+
+@media all and (max-width: 425px)
+{
+    .places__image{
+        width: initial;
+        margin-bottom: 32px;
+    }
+}

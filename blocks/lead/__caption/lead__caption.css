@@ -1,0 +1,43 @@
+.lead__caption{
+    display: flex;
+    margin-left: 11.5625%;
+    margin-top: 8px;
+    margin-bottom: 92px;
+    height: 14px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 14px;
+
+
+letter-spacing: 1.5px;
+text-transform: uppercase;
+
+color: #FFFFFF;
+}
+
+@media screen and (max-width: 1024px)
+{
+    .lead__caption{
+        margin-left: 4.6875%;
+    }
+}
+
+
+@media screen and (max-width: 768px)
+{
+    .lead__caption{
+        margin-left: calc(100% * 24 / 768);
+        margin-bottom: 92px;
+    }
+}
+
+@media all and (max-width: 320px)
+{
+    .lead__caption{
+        margin-left: calc(100% * 16 / 320);
+        margin-bottom: 64px;
+    }
+}
