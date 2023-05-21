@@ -5,12 +5,8 @@
     margin-top: 92px;
     width: calc(100% * (1280 - 48*2)/1280);
     margin-left: calc(48/1280*100%);
-    /* height: 740px; */
     aspect-ratio: 1184/740;
-    overflow: hidden;
 }
-
-
 
 @media screen and (max-width: 1024px)
 {
@@ -22,24 +18,10 @@
     }
 }
 
-
-@media screen and (max-width: 768px)
-{
-    .cover{
-        margin-top: 90px;
-        width: 100%;
-        margin-left: 0;
-    }
-}
-
-
-
 @media all and (max-width: 425px)
 {
     .cover{
         margin-top: 66px;
-        width: 100%;
-        margin-left: 0;
     }
 }
 

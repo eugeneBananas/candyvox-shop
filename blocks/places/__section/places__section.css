@@ -4,17 +4,7 @@
     gap: 26px;
 }
 
-
 @media screen and (max-width: 768px)
-{
-    .places__section{
-        gap: 25px;
-    }
-}
-
-
-
-@media all and (max-width: 525px)
 {
     .places__section{
         gap: 25px;

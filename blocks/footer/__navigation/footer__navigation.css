@@ -2,6 +2,12 @@
     margin-left: calc(100% * 48 / 1280);
 }
 
+@media screen and (max-width: 1024px)
+{
+    .footer__navigation{
+        margin-left: calc(100% * 24 / 1024);
+    }
+}
 
 @media screen and (max-width: 768px)
 {

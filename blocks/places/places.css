@@ -3,7 +3,6 @@
     margin: auto;
 }
 
-
 @media screen and (max-width: 1024px)
 {
     .places{
@@ -17,8 +16,6 @@
         width: calc(100% - 2 * 24/768 * 100%);
     }
 }
-
-
 
 @media all and (max-width: 525px)
 {

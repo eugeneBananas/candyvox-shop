@@ -1,18 +1,10 @@
 .places__paragraph{
-margin: 0;
-margin-left: 40px;
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 18px;
-line-height: 163%;
-}
-
-@media screen and (max-width: 1024px)
-{
-    .places__paragraph{
-        margin-left: 32px;
-    }
+    margin: 0;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 163%;
 }
 
 @media screen and (max-width: 768px)
@@ -20,17 +12,12 @@ line-height: 163%;
     .places__paragraph{
         font-size: 16px;
         line-height: 163%;
-        margin-left: 28px;
     }
 }
-
-
 
 @media all and (max-width: 525px)
 {
     .places__paragraph{
-        font-size: 16px;
-        line-height: 163%;
         margin-left: 0;
         padding: 0 calc(100% * 24 / 768);
     }
@@ -39,9 +26,6 @@ line-height: 163%;
 @media all and (max-width: 425px)
 {
     .places__paragraph{
-        font-size: 16px;
-        line-height: 163%;
-        margin-left: 0;
         padding: 0 calc(100% * 16 / 320);
     }
 }

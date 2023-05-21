@@ -1,21 +1,24 @@
-.header__link-en{
-    width: 30px;
- 
+.header__link{
+    max-width: 30px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
     line-height: 28px;
     color: white;
-
     text-decoration-line: none;
-    
+    transition: .4s all;
+    -webkit-transition: .4s all;
+    -o-transition: .4s all;
 }
 
+.header__link:hover{
+    opacity: 80%;
+}
 
 @media all and (max-width: 425px)
 {
-    .header__link-en{
+    .header__link{
         font-size: 18px;
         line-height: 20px;
     }

@@ -17,14 +17,12 @@
 {
     .lead__image{
         width: 100%;
-        margin-top: 56px;
     }
 }
 
 @media all and (max-width: 425px)
 {
     .lead__image{
-        width: 100%;
         margin-top: 40px;
     }
 }

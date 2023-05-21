@@ -17,20 +17,13 @@
     }
 }
 
-@media screen and (max-width: 768px)
-{
-    .footer__links{
-        margin-top: 88px;
-    }
-}
-
-
 @media all and (max-width: 425px)
 {
     .footer__links{
         gap: 32px;
         flex-direction: column;
         margin-top: 64px;
+        margin-bottom: 0;
     }
 }
 

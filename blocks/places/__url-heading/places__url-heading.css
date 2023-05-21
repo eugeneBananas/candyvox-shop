@@ -1,30 +1,17 @@
 .places__url-heading{
     margin: 0;
     margin-bottom: 12px;
-
-
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 12px;
-line-height: 170%;
-letter-spacing: 2px;
-color: #AAAAAA;
-
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 170%;
+    letter-spacing: 2px;
+    color: #AAAAAA;
+    text-transform: uppercase;
 }
-
 
 @media screen and (max-width: 768px)
-{
-    .places__url-heading{
-        font-size: 12px;
-        line-height: 12px;
-    }
-}
-
-
-
-@media all and (max-width: 525px)
 {
     .places__url-heading{
         font-size: 12px;

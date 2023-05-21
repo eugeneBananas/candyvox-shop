@@ -6,5 +6,12 @@
     object-fit: cover;
     height: 100%;
     opacity: 30%;
+    transition: .4s all;
+    -webkit-transition: .4s all;
+    -o-transition: .4s all;
+}
 
-} 
+
+.cover__overlay:hover{
+    opacity: 80%; 
+}

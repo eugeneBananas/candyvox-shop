@@ -2,18 +2,13 @@
     margin: 0;
     margin-left: 11.5625%;
     margin-bottom: 40px;
-width: 690px;
-
-font-family: 'Inter';
-font-style: normal;
-font-weight: 900;
-font-size: 54px;
-line-height: 58px;
-/* identical to box height, or 107% */
-
- 
+    max-width: 690px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 54px;
+    line-height: 58px;
 }
-
 
 @media screen and (max-width: 1024px)
 {
@@ -27,11 +22,8 @@ line-height: 58px;
 {
     .intro__title{
         margin-left: calc(100% * 24 / 768);
-        width: initial;
     }
 }
-
-
 
 @media all and (max-width: 425px)
 {
