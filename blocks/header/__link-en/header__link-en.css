@@ -1,9 +1,6 @@
 .header__link-en{
-    position: absolute;
     width: 30px;
-    top: 46px;
-    right: 48px;
-    
+ 
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -19,10 +16,6 @@
 @media all and (max-width: 425px)
 {
     .header__link-en{
-        top: 30px;
-        right: 16px;
-        width: 22px;
-
         font-size: 18px;
         line-height: 20px;
     }

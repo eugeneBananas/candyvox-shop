@@ -32,3 +32,14 @@ text-align: center;
 
     }
 }
+
+@media all and (max-width: 315px)
+{
+    .lead__subtitle{
+        margin-top: 16px;
+        width: initial;
+        font-size: 14px;
+        line-height: 18px;
+
+    }
+}

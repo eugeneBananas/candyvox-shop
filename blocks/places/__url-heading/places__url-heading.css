@@ -24,7 +24,7 @@ color: #AAAAAA;
 
 
 
-@media all and (max-width: 425px)
+@media all and (max-width: 525px)
 {
     .places__url-heading{
         font-size: 12px;

@@ -1,7 +1,6 @@
 .footer__link{
     margin: 0;
 
-
 font-family: 'Inter';
 font-style: normal;
 font-weight: 400;
@@ -9,6 +8,9 @@ font-size: 16px;
 line-height: 18px;
 color: white;
 text-decoration: none;
+transition: .4s all;
+-webkit-transition: .4s all;
+-o-transition: .4s all;
 }
 
 .footer__link:hover{

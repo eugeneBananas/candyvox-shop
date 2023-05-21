@@ -44,6 +44,16 @@ line-height: 76px;
 }
 
 
+@media all and (max-width: 525px)
+{
+    .places__title{
+        width: 280px;
+        margin-top: 50px;
+        margin-left: calc(100% * 24 / 768);
+        margin-bottom: 32px;
+    }
+}
+
 @media all and (max-width: 425px)
 {
     .places__title{

@@ -3,11 +3,6 @@
     margin: auto;
 }
 
-.places *{
-    transition: .4s all;
-    -webkit-transition: .4s all;
-    -o-transition: .4s all;
-}
 
 @media screen and (max-width: 1024px)
 {
@@ -25,7 +20,7 @@
 
 
 
-@media all and (max-width: 425px)
+@media all and (max-width: 525px)
 {
     .places{
         width: 100%;

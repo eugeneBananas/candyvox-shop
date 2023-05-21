@@ -3,7 +3,7 @@
     width: 100%;
 }
 
-@media all and (max-width: 425px)
+@media all and (max-width: 525px)
 {
     .places__place{
         flex-direction: column;

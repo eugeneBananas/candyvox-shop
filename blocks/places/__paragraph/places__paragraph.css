@@ -26,6 +26,16 @@ line-height: 163%;
 
 
 
+@media all and (max-width: 525px)
+{
+    .places__paragraph{
+        font-size: 16px;
+        line-height: 163%;
+        margin-left: 0;
+        padding: 0 calc(100% * 24 / 768);
+    }
+}
+
 @media all and (max-width: 425px)
 {
     .places__paragraph{

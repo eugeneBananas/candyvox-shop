@@ -1,0 +1,29 @@
+.header__links{
+    display: flex;
+    margin-top: 46px;
+    margin-right: 48px;
+    gap: 18px;
+}
+
+@media screen and (max-width: 768px)
+{
+    .header__links{
+        margin-right: calc(100% * 48 / 1024);
+    }
+}
+
+@media screen and (max-width: 768px)
+{
+    .header__links{
+        margin-right: calc(100% * 24 / 768);
+    }
+}
+
+@media all and (max-width: 425px)
+{
+    .header__links{
+        margin-right: calc(100% * 16 / 320);
+        margin-top: 30px;
+        gap: 16px;
+    }
+}

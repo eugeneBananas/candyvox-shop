@@ -5,6 +5,9 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 22px;
+    transition: .4s all;
+    -webkit-transition: .4s all;
+    -o-transition: .4s all;
 }
 
 .places__link:hover{

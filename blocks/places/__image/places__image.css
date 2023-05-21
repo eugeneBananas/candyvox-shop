@@ -19,7 +19,7 @@
 
 
 
-@media all and (max-width: 425px)
+@media all and (max-width: 525px)
 {
     .places__image{
         width: initial;

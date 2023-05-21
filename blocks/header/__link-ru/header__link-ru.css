@@ -1,8 +1,5 @@
 .header__link-ru{
-position: absolute;
 width: 30px;
-top: 46px;
-right: 95px;
 
 font-family: 'Inter';
 font-style: normal;
@@ -11,20 +8,14 @@ font-size: 24px;
 line-height: 28px;
 color: white;
 
-text-decoration-line: underline;
+text-decoration-line: none;
 
 }
 
 @media all and (max-width: 425px)
 {
     .header__link-ru{
-        top: 30px;
-        right: 56px;
-        width: 22px;
-
-
         font-size: 18px;
         line-height: 20px;
-
     }
 }
