@@ -21,5 +21,5 @@
 
 ## Авторы
 
-- Евгений Ряполов (Github (https://github.com/eugeneBananas/russian-travel))
+- Евгений Ряполов (Github (https://eugenebananas.github.io/russian-travel/))
 

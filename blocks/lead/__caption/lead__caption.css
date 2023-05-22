@@ -25,7 +25,6 @@
 {
     .lead__caption{
         margin-left: calc(100% * 24 / 768);
-        margin-bottom: 92px;
     }
 }
 

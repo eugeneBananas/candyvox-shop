@@ -24,10 +24,11 @@
 {
     .places__article{
         grid-template-columns: calc(100% * 340/(768 - 2 * 768 * 24/768)) auto;
+        margin-top: 73px;
+        gap: 48px 28px;
     }
     .places__article:first-child{
         margin-top: 88px;
-        gap: 48px 28px;
     }
 }
 
@@ -37,9 +38,10 @@
         width: initial;
         grid-template-rows: repeat(4,auto);
         grid-template-columns: auto;
+        gap: 32px 0;
+        margin-top: 50px;
     }
     .places__article:first-child{
         margin-top: 64px;
-        gap: 32px 0;
     }
 }

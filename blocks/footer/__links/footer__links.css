@@ -10,13 +10,6 @@
 }
 
 
-@media screen and (max-width: 1020px)
-{
-    .footer__links{
-        margin-top: 88px;
-    }
-}
-
 @media all and (max-width: 425px)
 {
     .footer__links{
