@@ -1,0 +1,6 @@
+.logo__vector{
+    position: absolute;
+    top: 0;
+    right: -310px;
+    transform: rotate(20deg);
+}

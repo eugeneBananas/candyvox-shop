@@ -1,0 +1,48 @@
+@font-face{
+    src: url('../fonts/Inter Desktop/Inter-Regular.otf');
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face{
+    src: url('../fonts/Inter Desktop/Inter-Black.otf');
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 900;
+}
+
+@font-face{
+    src: url('../fonts/Inter Desktop/Inter-Bold.otf');
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face{
+    src: url('../fonts/Acme/Acme-Regular.ttf');
+    font-family: 'Acme';
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face{
+    src: url('../fonts/Agbalumo/Agbalumo-Regular.ttf');
+    font-family: 'Agbalumo';
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face{
+    src: url('../fonts/Sofia Sans/SofiaSansSemiCondensed-Regular.ttf');
+    font-family: 'Sofia';
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face{
+    src: url('../fonts/Unbounded/Unbounded-Regular.ttf');
+    font-family: 'Unbounded';
+    font-style: normal;
+    font-weight: 400;
+}

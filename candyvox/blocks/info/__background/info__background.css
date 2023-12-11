@@ -1,0 +1,23 @@
+.info__background{
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    object-fit: cover;
+    height: 100%;
+    background-image: url('../../../images/kandinsky-download-1700330223033.png');
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    margin: auto;
+    text-decoration: none;
+    transition: .4s all;
+    -webkit-transition: .4s all;
+    -o-transition: .4s all;
+}
+
+.info__background:hover{
+    transform: scale(1.02);
+}

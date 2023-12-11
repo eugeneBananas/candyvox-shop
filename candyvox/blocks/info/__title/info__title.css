@@ -1,0 +1,46 @@
+.info__title{
+    color: white;
+    font-size: 80px;
+    max-width: 80%;
+    z-index: 3;
+    margin: 0;
+    font-family: "Unbounded";
+    line-height: 76px;
+    text-align: center;
+    pointer-events: none;
+}
+
+@media all and (max-width: 1080px){
+    .info__title{
+        font-size: 64px;
+        line-height: 60px;
+    }
+}
+
+@media all and (max-width: 850px){
+    .info__title{
+        font-size: 42px;
+        line-height: 46px;
+    }
+}
+
+@media all and (max-width: 670px){
+    .info__title{
+        font-size: 32px;
+        line-height: 36px;
+    }
+}
+
+@media all and (max-width: 520px){
+    .info__title{
+        font-size: 18px;
+        line-height: 22px;
+    }
+}
+
+@media all and (max-width: 420px){
+    .info__title{
+        font-size: 14px;
+        line-height: 18px;
+    }
+}

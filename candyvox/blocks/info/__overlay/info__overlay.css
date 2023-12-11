@@ -1,0 +1,16 @@
+.info__overlay{
+    position: absolute;
+    background-color: #ffffff;
+    width: 100%;
+    z-index: 2;
+    object-fit: cover;
+    height: 100%;
+    opacity: 10%;
+    transition: .4s all;
+    -webkit-transition: .4s all;
+    -o-transition: .4s all;
+}
+
+.info__overlay:hover{
+    opacity: 20%; 
+}

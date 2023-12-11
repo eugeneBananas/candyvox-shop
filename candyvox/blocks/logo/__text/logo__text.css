@@ -1,0 +1,8 @@
+.logo__text{
+    font-family: "Agbalumo";
+    position: relative;
+    bottom: 2px;
+    color: rgb(80, 20, 20);
+    z-index: 4;
+    font-size: 20px;
+}

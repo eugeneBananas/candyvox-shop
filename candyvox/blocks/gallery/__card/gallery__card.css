@@ -1,0 +1,102 @@
+.gallery__card{
+    border: white 10px solid;
+    position: relative;
+    width: 261px;
+    aspect-ratio: 272/476;
+    background-position: center;
+    background-size: cover;
+    border-radius: 90px;
+    padding: 5px 0;
+    overflow: hidden;
+    transition: .4s all;
+    -webkit-transition: .4s all;
+    -o-transition: .4s all;
+}
+
+.gallery__card:hover{
+    transform: scale(1.03);
+}
+
+.gallery__card:first-child{
+    background-image: url('../../../images/cookie.jpg');
+}
+
+.gallery__card:nth-child(2){
+    background-image: url('../../../images/drazhe.jpg');
+}
+
+.gallery__card:nth-child(3){
+    background-image: url('../../../images/konfeti.png');
+}
+
+.gallery__card:nth-child(4){
+    background-image: url('../../../images/ponchiki.jpg');
+}
+
+.gallery__card:nth-child(5){
+    background-image: url('../../../images/moti.jpg');
+}
+
+.gallery__card:nth-child(6){
+    background-image: url('../../../images/keksi.jpg');
+}
+
+.gallery__card:nth-child(7){
+    background-image: url('../../../images/marmelad.jpg');
+}
+
+.gallery__card:nth-child(8){
+    background-image: url('../../../images/sladosti.jpg');
+}
+
+@media all and (max-width: 1279px){
+    .gallery__card:first-child{
+        justify-self: end;
+    }
+    
+    .gallery__card:nth-child(2){
+        justify-self: center;
+    }
+    
+    .gallery__card:nth-child(3){
+        justify-self: start;
+    }
+    
+    .gallery__card:nth-child(4){
+        justify-self: end;
+    }
+    
+    .gallery__card:nth-child(5){
+        justify-self: center;
+    }
+    
+    .gallery__card:nth-child(6){
+        justify-self: start;
+    }
+    
+    .gallery__card:nth-child(7){
+        justify-self: end;
+    }
+    
+    .gallery__card:nth-child(8){
+        justify-self: center;
+    }
+}
+
+@media all and (max-width: 1010px){
+    .gallery__card:nth-child(even){
+        justify-self: start;
+    }
+    .gallery__card:nth-child(odd){
+        justify-self: end;
+    }
+}
+
+@media all and (max-width: 650px){
+    .gallery__card:nth-child(even){
+        justify-self: center;
+    }
+    .gallery__card:nth-child(odd){
+        justify-self: center;
+    }
+}

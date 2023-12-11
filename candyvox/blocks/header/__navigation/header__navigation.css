@@ -1,0 +1,5 @@
+.header__navigation{
+    display: flex;
+    gap: 50px;
+    /* margin-left: calc(200/1920*100%); */
+}

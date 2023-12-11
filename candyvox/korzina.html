@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candyvox</title>
+    <link rel="stylesheet" href="./pages/index.css">
+</head>
+
+<body class="root">
+    <header class="header">
+        <div class="header__box">
+            <div class="header__burger-box">
+                <input class="header__checkbox" type="checkbox" name="" id="" />
+                <div class="header__hamburger-lines">
+                    <span class="header__line header__line1"></span>
+                    <span class="header__line header__line2"></span>
+                    <span class="header__line header__line3"></span>
+                </div>
+                <div class="header__menu-items">
+                    <li class="header__li-element"><a class="header__link-element" href="#">Home</a></li>
+                    <li class="header__li-element"><a class="header__link-element" href="#">About</a></li>
+                    <li class="header__li-element"><a class="header__link-element" href="#">Text</a></li>
+                    <li class="header__li-element"><a class="header__link-element" href="#">Contacts</a></li>
+                </div>
+            </div>
+
+            <div class="logo logo_header">
+                <img class="logo__image" src="./images/candy-svgrepo-com (1).svg">
+                <span class="logo__text">Candyvox</span>
+                <img class="logo__vector" src="./images/Vector7.svg">
+            </div>
+        </div>
+
+        <!-- <nav class="header__navigation">
+                <a class="header__nav-text" link="#">Home</a>
+                <a class="header__nav-text" link="#">Shop</a>
+                <a class="header__nav-text" link="#">Faq's</a>
+                <a class="header__nav-text" link="#">Stockists</a>
+                <a class="header__nav-text" link="#">Wholesale</a>
+                <a class="header__nav-text" link="#">Contact</a>
+            </nav> -->
+
+        <div class="header__search">
+            <div class="header__container">
+                <div class="header__basket">
+                    <img class="header__bag" src="./images/Group.svg">
+                    <span class="header__counter">0</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="purchase">
+        <div class="purchase__header">
+            <h2 class="purchase__title">Корзина заказов</h2>
+            <button class="purchase__delete-card" type="button">Очистить</button>
+        </div>
+        <div class="purchase__container">
+            <template class="purchase__template">
+                <div class="purchase__card">
+                    <img src="./images/16842288859354.jpg" class="purchase__image">
+                    <div class="purchase__description">
+                        <p class="purchase__name">Леденец</p>
+                        <p class="purchase__delete">Удалить</p>
+                    </div>
+                    <div>
+                        <p class="purchase__cost">600</p><span>Р</span>
+                    </div>
+                    <p class="purchase__count">2</p>
+                    <p class="purchase__total">Итого: 1200Р</p>
+                </div>
+            </template>
+        </div>
+        <div class="purchase__end">
+            <span class="purchase__all">Итого: </span>
+            <p class="purchase__all purchase__kolvo">0</p>
+            <span class="purchase__all">Р</span>
+        </div>
+    </section>
+
+</body>
+<script src="./korzina.js"></script>
+
+</html>
