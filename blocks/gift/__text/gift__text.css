@@ -1,0 +1,43 @@
+.gift__text{
+    font-family: "Unbounded";
+    margin: 0;
+    font-size: 48px;
+    line-height: 52px;
+    color: rgb(84, 0, 36);
+    display: inline;
+}
+
+@media all and (max-width: 1170px){
+    .gift__text{
+        font-size: 42px;
+        line-height: 48px;
+    }
+  }
+  
+  @media all and (max-width: 1000px){
+    .gift__text{
+        font-size: 36px;
+        line-height: 42px;
+    }
+  }
+
+  @media all and (max-width: 840px){
+    .gift__text{
+        font-size: 28px;
+        line-height: 36px;
+    }
+  }
+
+  
+  @media all and (max-width: 840px){
+    .gift__text{
+        text-align: center;
+    }
+  }
+
+  @media all and (max-width: 500px){
+    .gift__text{
+        font-size: 20px;
+        line-height: 28px;
+    }
+  }

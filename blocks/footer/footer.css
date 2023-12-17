@@ -1,0 +1,22 @@
+.footer{
+    margin-top: 48px;
+    display: flex;
+    justify-content: space-evenly;
+    height: 150px;
+    width: 100%;
+    background-color: rgb(245, 208, 208);
+    border-radius: 20px 20px 0 0;
+}
+
+@media all and (max-width: 720px){
+    .footer{
+        /* width: 500px;
+        max-width: 500px;
+        margin: auto;
+        margin-top: 48px; */
+        flex-direction: column;
+        height: 550px;
+        box-sizing: content-box;
+        align-items: center;
+    }
+}

@@ -1,0 +1,46 @@
+.info__subtitle{
+    color: white;
+    font-size: 42px;
+    z-index: 3;
+    margin: 0;
+    font-family: "Unbounded";
+    line-height: 60px;
+    text-align: center;
+    pointer-events: none;
+}
+
+@media all and (max-width: 1080px){
+    .info__subtitle{
+        font-size: 36px;
+        line-height: 42px;
+    }
+}
+
+@media all and (max-width: 850px){
+    .info__subtitle{
+        font-size: 22px;
+        line-height: 26px;
+    }
+}
+
+@media all and (max-width: 650px){
+    .info__subtitle{
+        font-size: 18px;
+        line-height: 22px;
+    }
+}
+
+/* @media all and (max-width: 520px){
+    .info__subtitle{
+        font-size: 14px;
+        line-height: 18px;
+    }
+}
+
+@media all and (max-width: 420px){
+    .info__subtitle{
+        font-size: 10px;
+        line-height: 14px;
+    }
+} */
+

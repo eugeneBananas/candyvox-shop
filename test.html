@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Candyvox</title>
+  <link rel="stylesheet" href="./pages/index.css">
+</head>
+
+<body class="root">
+  <header class="header">
+    <div class="header__box">
+      <div class="header__burger-box">
+        <input class="header__checkbox" type="checkbox" name="" id="" />
+        <div class="header__hamburger-lines">
+          <span class="header__line header__line1"></span>
+          <span class="header__line header__line2"></span>
+          <span class="header__line header__line3"></span>
+        </div>
+        <div class="header__menu-items">
+          <li class="header__li-element"><a class="header__link-element" href="./Login.html">Вход</a></li>
+          <li class="header__li-element"><a class="header__link-element" href="./test.html">Тест</a></li>
+          <li class="header__li-element"><a class="header__link-element" href="./cards.html">Товары</a></li>
+          <li class="header__li-element header__li-element_contacts"><a class="header__link-element" href="#contacts">Контакты</a></li>
+        </div>
+      </div>
+
+      <div class="logo logo_header">
+        <img class="logo__image" src="./images/candy-svgrepo-com (1).svg">
+        <span class="logo__text">Candyvox</span>
+        <img class="logo__vector" src="./images/Vector7.svg">
+      </div>
+    </div>
+
+    <div class="header__search">
+      <div class="header__container">
+        <div class="header__basket">
+          <img class="header__bag" src="./images/Group.svg">
+          <span class="header__counter">0</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <h2 class="title-test">Тест сладкоежки</h2>
+  <form id="quizForm">
+    <div class="question">
+      <p>1. Ваш любимый цвет?</p>
+      <div><input class="radiobutton" type="radio" id="q1a" name="q1" value="a"> <label for="q1a">Красный</label></div>
+      <div><input class="radiobutton" type="radio" id="q1b" name="q1" value="b"> <label for="q1b">Синий</label></div>
+      <div><input class="radiobutton" type="radio" id="q1c" name="q1" value="c"> <label for="q1c">Зеленый</label></div>
+    </div>
+    <div class="question">
+      <p>2. Как вы справляетесь со стрессом?</p>
+      <div><input class="radiobutton" type="radio" id="q2a" name="q2" value="a"> <label for="q2a">Ем шоколад</label>
+      </div>
+      <div><input class="radiobutton" type="radio" id="q2b" name="q2" value="b"> <label for="q2b">Прогуляюсь</label>
+      </div>
+      <div><input class="radiobutton" type="radio" id="q2c" name="q2" value="c"> <label for="q2c">Медитирую</label>
+      </div>
+    </div>
+    <div class="question">
+      <p>3. Как вы обычно тратите выходные?</p>
+      <div><input class="radiobutton" type="radio" id="q3a" name="q3" value="a"> <label for="q3a">Пеку печенье</label>
+      </div>
+      <div><input class="radiobutton" type="radio" id="q3b" name="q3" value="b"> <label for="q3b">Иду в поход</label>
+      </div>
+      <div><input class="radiobutton" type="radio" id="q3c" name="q3" value="c"> <label for="q3c">Читаю книги</label>
+      </div>
+    </div>
+    <button type="button" class="quiz__check">Проверить</button>
+  </form>
+
+  <div id="result" style="display: none;">
+    <h2>Ваш характер сладкоежки:</h2>
+    <p id="resultText"></p>
+  </div>
+
+  <footer class="footer" id="contacts">
+    <div class="footer__contacts">
+      <h3 class="footer__title">Контакты</h3>
+      <p class="footer__text">7-900-000-00-00</p>
+    </div>
+    <div class="footer__sn">
+      <h3 class="footer__title">Социальные сети</h3>
+      <a href="#" class="footer__text">ВКонтакте</a>
+      <a href="#" class="footer__text">Telegram</a>
+      <a href="#" class="footer__text">Facebook</a>
+    </div>
+    <div class="footer__creator">
+      <h3 class="footer__title">Создатель</h3>
+      <p clsas="footer__text">Ряполов Е.М. ИКБО-30-22</p>
+    </div>
+  </footer>
+
+  <script src="./test.js"></script>
+</body>
+
+</html>

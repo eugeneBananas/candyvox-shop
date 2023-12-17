@@ -1,0 +1,5 @@
+.header__container{
+    display: flex;
+    margin-right: calc(127/1920*100%);
+    gap: 15px;
+}

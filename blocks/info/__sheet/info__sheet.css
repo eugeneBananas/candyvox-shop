@@ -1,0 +1,51 @@
+.info__sheet{
+    position: absolute;
+    width: 300%;
+    aspect-ratio: 25/1;
+    bottom: -30px;
+    left: 0;
+    animation: slide 10s infinite;
+}
+
+@keyframes slide{
+    0% {
+      transform: translateX(-20%);
+    }
+    50% {
+      transform: translateX(-35%);
+    }
+    100% {
+      transform: translateX(-20%);
+  }
+}
+
+@media all and (max-width: 1080px){
+  .info__sheet{
+    bottom: -26px;
+  }
+}
+
+@media all and (max-width: 850px){
+  .info__sheet{
+    bottom: -22px;
+  }
+}
+
+@media all and (max-width: 670px){
+  .info__sheet{
+    bottom: -20px;
+  }
+}
+
+@media all and (max-width: 520px){
+  .info__sheet{
+    bottom: -18px;
+  }
+}
+
+@media all and (max-width: 420px){
+  .info__sheet{
+    bottom: -14px;
+  }
+}
+

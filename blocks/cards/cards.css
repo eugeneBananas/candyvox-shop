@@ -1,0 +1,172 @@
+.choose{
+    width: 90%;
+    margin: auto;
+    margin-top: 100px;
+}
+
+  .panel {
+    font-family: "Unbounded";
+    font-size: 12px;
+    line-height: 14px;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 150px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-size: 500% 500%;
+    background-image: linear-gradient(-70deg, rgba(255, 55, 0, 0.719) 0%, rgba(9, 166, 251, 0.829)25%, rgba(179, 0, 255, 0.774) 51%, #ffe735c0 100%);
+    -webkit-animation: AnimateBG 40s ease infinite;
+            animation: AnimateBG 40s ease infinite;
+  }
+
+  .panel-ch{
+    margin: 0;
+    margin-right: 20px;
+  }
+  .input-group {
+    margin-bottom: 20px;
+  }
+  .input-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  .input-group input {
+    width: 96%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  .radio-group label {
+    margin-right: 10px;
+  }
+  @media (max-width: 768px) {
+    .panel {
+    font-size: 24px;
+    line-height: 26px;
+    max-width: 100%;
+    }
+  }
+
+  
+  .product-container {
+    margin-top: 48px;
+    display: flex;
+    height: 416px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .product-card {
+    width: 250px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    font-family: "Unbounded";
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  .product-card:nth-child(7n+1) {
+    background-size: 500% 500%;
+    background-image: linear-gradient(-70deg, rgba(255, 0, 0, 0.719) 0%, rgba(228, 10, 228, 0.829)25%, rgba(255, 0, 234, 0.774) 51%, #ff6435c0 100%);
+    -webkit-animation: AnimateBG 40s ease infinite;
+            animation: AnimateBG 40s ease infinite;
+  }
+
+  .product-card:nth-child(7n+2) {
+    background-size: 500% 500%;
+    background-image: linear-gradient(-70deg, rgba(0, 255, 89, 0.719) 0%, rgba(144, 10, 228, 0.829)25%, rgba(255, 0, 76, 0.774) 51%, #ff8d358c 100%);
+    -webkit-animation: AnimateBG 40s ease infinite;
+            animation: AnimateBG 40s ease infinite;
+  }
+
+  .product-card:nth-child(7n+3) {
+    background-size: 500% 500%;
+    background-image: linear-gradient(-70deg, rgba(0, 255, 225, 0.719) 0%, rgba(228, 10, 188, 0.829)25%, rgba(255, 38, 0, 0.774) 51%, #5dff358c 100%);
+    -webkit-animation: AnimateBG 40s ease infinite;
+            animation: AnimateBG 40s ease infinite;
+  }
+
+  .product-card:nth-child(7n+4) {
+    background-size: 500% 500%;
+    background-image: linear-gradient(-70deg, rgba(0, 55, 255, 0.719) 0%, rgba(228, 10, 10, 0.829)5%, rgba(255, 247, 0, 0.774) 51%, #35ffeb8c 100%);
+    -webkit-animation: AnimateBG 40s ease infinite;
+            animation: AnimateBG 40s ease infinite;
+  }
+
+  .product-card:nth-child(7n+5) {
+    background-size: 500% 500%;
+    background-image: linear-gradient(-70deg, rgba(111, 0, 255, 0.719) 0%,rgba(181, 228, 10, 0.829)5%, rgba(0, 255, 195, 0.774) 51%, #6b35ff8c 100%);
+    -webkit-animation: AnimateBG 40s ease infinite;
+            animation: AnimateBG 40s ease infinite;
+  }
+
+  .product-card:nth-child(7n+6) {
+    background-size: 500% 500%;
+    background-image: linear-gradient(-70deg, rgba(255, 0, 187, 0.719) 0%,rgba(10, 228, 28, 0.829)5%, rgba(0, 55, 255, 0.774) 51%, #ff35c28c 100%);
+    -webkit-animation: AnimateBG 40s ease infinite;
+            animation: AnimateBG 40s ease infinite;
+  }
+
+  .product-card:nth-child(7n) {
+    background-size: 500% 500%;
+    background-image: linear-gradient(-70deg, rgba(255, 0, 89, 0.719) 0%,rgba(10, 228, 126, 0.829)5%, rgba(21, 0, 255, 0.774) 51%, #ff35358c 100%);
+    -webkit-animation: AnimateBG 40s ease infinite;
+            animation: AnimateBG 40s ease infinite;
+  }
+
+  .product-flex{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .product-kolvo{
+    margin-top: 5px;
+  }
+
+  .product-info{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .product-text{
+    min-height: 42px;
+  }
+
+  .product-button{
+    cursor: pointer;
+    border-radius: 3px;
+    border: 3px solid #ffffff;
+    background-color: white;
+  }
+  .product-card img {
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  .product-card h3 {
+    margin-top: 10px;
+  }
+  .product-card p {
+    margin-top: 5px;
+  }
+  @media (max-width: 768px) {
+    .container {
+      max-width: 100%;
+    }
+    .product-card {
+    font-size: 24px;
+    line-height: 26px;
+    width: 100%;
+    }
+  }
+
+  @media all and (max-width: 420px){
+    .product-card  {
+      font-size: 14px;
+      line-height: 16px;
+    }
+  }

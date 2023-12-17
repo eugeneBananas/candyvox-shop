@@ -1,0 +1,22 @@
+.info{
+    width: 100%;
+    display: flex;
+    position: relative;
+    margin: 0;
+    margin-top: 110px;
+    margin-bottom: 48px;
+    width: calc(100% * (1280 - 48*2)/1280);
+    margin-left: calc(48/1280*100%);
+    aspect-ratio: 1184/640;
+    overflow: hidden;
+}
+
+
+@media all and (max-width: 650px){
+    .info{
+        margin-left: 0;
+        aspect-ratio: initial;
+        height: 70vh;
+        width: 100%;
+    }
+}

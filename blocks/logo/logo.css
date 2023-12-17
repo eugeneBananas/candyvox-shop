@@ -1,0 +1,10 @@
+.logo{
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    border-radius: 25px;
+    background-color: rgba(250, 234, 214, .6);
+    width: 150px;
+    overflow: hidden;
+}

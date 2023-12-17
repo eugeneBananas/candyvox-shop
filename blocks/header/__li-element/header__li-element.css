@@ -1,0 +1,11 @@
+.header__li-element {
+    list-style: none;
+    display: flex;
+    justify-content: end;
+}
+
+@media all and (max-width: 720px){
+    .header__li-element{
+        justify-content: start;
+    }
+}

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candyvox</title>
+    <link rel="stylesheet" href="./pages/index.css">
+</head>
+
+<body class="root">
+
+    <header class="header">
+        <div class="header__box">
+            <div class="header__burger-box">
+                <input class="header__checkbox" type="checkbox" name="" id="" />
+                <div class="header__hamburger-lines">
+                    <span class="header__line header__line1"></span>
+                    <span class="header__line header__line2"></span>
+                    <span class="header__line header__line3"></span>
+                </div>
+                <div class="header__menu-items">
+                    <li class="header__li-element"><a class="header__link-element" href="./Login.html">Вход</a></li>
+                    <li class="header__li-element"><a class="header__link-element" href="./test.html">Тест</a></li>
+                    <li class="header__li-element"><a class="header__link-element" href="./cards.html">Товары</a></li>
+                    <li class="header__li-element header__li-element_contacts"><a class="header__link-element" href="#contacts">Контакты</a></li>
+                </div>
+            </div>
+
+            <div class="logo logo_header">
+                <img class="logo__image" src="./images/candy-svgrepo-com (1).svg">
+                <span class="logo__text">Candyvox</span>
+                <img class="logo__vector" src="./images/Vector7.svg">
+            </div>
+        </div>
+
+        <!-- <nav class="header__navigation">
+                <a class="header__nav-text" link="#">Home</a>
+                <a class="header__nav-text" link="#">Shop</a>
+                <a class="header__nav-text" link="#">Faq's</a>
+                <a class="header__nav-text" link="#">Stockists</a>
+                <a class="header__nav-text" link="#">Wholesale</a>
+                <a class="header__nav-text" link="#">Contact</a>
+            </nav> -->
+
+        <div class="header__search">
+            <div class="header__container">
+                <div class="header__basket">
+                    <img class="header__bag" src="./images/Group.svg">
+                    <span class="header__counter">0</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="panel">
+        <div class="input-group">
+            <label for="min-price">Мин. цена</label>
+            <input type="text" id="min-price" placeholder="Введите мин. цену">
+        </div>
+        <div class="input-group">
+            <label for="max-price">Макс. цена</label>
+            <input type="text" id="max-price" placeholder="Введите макс. цену">
+        </div>
+        <div class="radio-group">
+            <div style="display: inline-block; margin-bottom: 15px">
+                <label for="chocolate">Печенье</label>
+                <input class="panel-ch" type="radio" id="cookie" name="sweet-type">
+            </div>
+            <div style="display: inline-block; margin-bottom: 15px">
+                <label for="candy">Драже</label>
+                <input class="panel-ch" type="radio" id="drazhe" name="sweet-type">
+            </div>
+            <div style="display: inline-block; margin-bottom: 15px">
+                <label for="lollipop">Конфеты</label>
+                <input class="panel-ch" type="radio" id="candy" name="sweet-type">
+            </div>
+            <div style="display: inline-block; margin-bottom: 15px">
+                <label for="lollipop">Пончики</label>
+                <input class="panel-ch" type="radio" id="donut" name="sweet-type">
+            </div>
+            <div style="display: inline-block; margin-bottom: 15px">
+                <label for="lollipop">Моти</label>
+                <input class="panel-ch" type="radio" id="moti" name="sweet-type">
+            </div>
+            <div style="display: inline-block; margin-bottom: 15px">
+                <label for="lollipop">Кексы</label>
+                <input class="panel-ch" type="radio" id="cupcake" name="sweet-type">
+            </div>
+            <div style="display: inline-block; margin-bottom: 15px">
+                <label for="lollipop">Мармелад</label>
+                <input class="panel-ch" type="radio" id="marmelad" name="sweet-type">
+            </div>
+            <div style="display: inline-block; margin-bottom: 15px">
+                <label for="lollipop">Другое</label>
+                <input class="panel-ch" type="radio" id="other" name="sweet-type">
+            </div>
+            <div style="display: inline-block; margin-bottom: 15px">
+                <label for="lollipop">Все</label>
+                <input class="panel-ch" type="radio" id="all" name="sweet-type">
+            </div>
+        </div>
+    </div>
+
+    <div class="product-container">
+        <template class="product-template">
+            <div class="product-card">
+                <img src="./images/keksi.jpg" alt="Chocolate" class="product-image">
+                <div styles="display: flex; justify-content:space-between; flex-direction:column; ">
+                    <h3 class="product-title">Chocolate Bar</h3>
+                    <p class="product-text" styles="min-height: 42px;">Delicious chocolate bar, perfect for a sweet treat.</p>
+                    <div class="product-flex">
+                        <div class="product-info">
+                            <p class="product-cost">2.99</p>
+                            <span class="product-kolvo"></span>
+                        </div>
+                        <button type="button" class="product-button">Добавить</button>
+                    </div>
+                </div>
+            </div>
+        </template>
+    </div>
+</body>
+<script src="./cards.js"></script>
+
+</html>

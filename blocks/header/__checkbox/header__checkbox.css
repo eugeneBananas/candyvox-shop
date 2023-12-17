@@ -1,0 +1,11 @@
+.header__checkbox{
+    position: absolute;
+    display: block;
+    height: 60px;
+    width: 60px;
+    top: -5px;
+    left: 10px;
+    z-index: 6;
+    opacity: 0;
+    cursor: pointer;
+}

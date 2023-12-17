@@ -1,0 +1,13 @@
+.gallery__text{
+    display: block;
+    width: 261px;
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    font-family: "Unbounded";
+    left: 0;
+    bottom: 60px;
+    font-size: 36px;
+    line-height: 40px;
+    color: rgba(26, 2, 21, 0.8);
+}

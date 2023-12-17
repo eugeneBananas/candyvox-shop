@@ -1,0 +1,10 @@
+.root {
+  max-width: 1280px;
+  margin: auto;
+  background: #fdf8f8;
+  /* background: #fffafa; */
+  font-family: 'Sofia', 'Arial', 'Helvetica', sans-serif;
+  color: #000000;
+  -webkit-font-smoothing: antialiased;
+}
+
