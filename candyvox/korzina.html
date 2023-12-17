@@ -19,10 +19,10 @@
                     <span class="header__line header__line3"></span>
                 </div>
                 <div class="header__menu-items">
-                    <li class="header__li-element"><a class="header__link-element" href="#">Home</a></li>
-                    <li class="header__li-element"><a class="header__link-element" href="#">About</a></li>
-                    <li class="header__li-element"><a class="header__link-element" href="#">Text</a></li>
-                    <li class="header__li-element"><a class="header__link-element" href="#">Contacts</a></li>
+                    <li class="header__li-element"><a class="header__link-element" href="./Login.html">Вход</a></li>
+                    <li class="header__li-element"><a class="header__link-element" href="./test.html">Тест</a></li>
+                    <li class="header__li-element"><a class="header__link-element" href="./cards.html">Товары</a></li>
+                    <li class="header__li-element header__li-element_contacts"><a class="header__link-element" href="#contacts">Контакты</a></li>
                 </div>
             </div>
 
@@ -65,21 +65,44 @@
                         <p class="purchase__name">Леденец</p>
                         <p class="purchase__delete">Удалить</p>
                     </div>
-                    <div>
+                    <div class="purchase__box">
                         <p class="purchase__cost">600</p><span>Р</span>
                     </div>
                     <p class="purchase__count">2</p>
-                    <p class="purchase__total">Итого: 1200Р</p>
+                    <div class="purchase__box2">
+                        <span>Итого:</span>
+                        <div>
+                            <p class="purchase__total">Итого: 1200Р</p>
+                            <span>Р</span>
+                        </div>
+                    </div>
                 </div>
             </template>
         </div>
         <div class="purchase__end">
+            <button type="button" class="purchase__button">Оплатить</button>
             <span class="purchase__all">Итого: </span>
             <p class="purchase__all purchase__kolvo">0</p>
             <span class="purchase__all">Р</span>
         </div>
     </section>
 
+    <footer class="footer" id="contacts">
+        <div class="footer__contacts">
+          <h3 class="footer__title">Контакты</h3>
+          <p class="footer__text">7-900-000-00-00</p>
+        </div>
+        <div class="footer__sn">
+          <h3 class="footer__title">Социальные сети</h3>
+          <a href="#" class="footer__text">ВКонтакте</a>
+          <a href="#" class="footer__text">Telegram</a>
+          <a href="#" class="footer__text">Facebook</a>
+        </div>
+        <div class="footer__creator">
+          <h3 class="footer__title">Создатель</h3>
+          <p clsas="footer__text">Ряполов Е.М. ИКБО-30-22</p>
+        </div>
+      </footer>
 </body>
 <script src="./korzina.js"></script>
 

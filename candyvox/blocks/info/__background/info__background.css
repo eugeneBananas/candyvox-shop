@@ -21,3 +21,9 @@
 .info__background:hover{
     transform: scale(1.02);
 }
+
+@media all and (max-width: 650px){
+    .info__background{
+        background-size: cover;
+    }
+}

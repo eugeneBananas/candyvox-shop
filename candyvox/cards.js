@@ -1,5 +1,32 @@
 let selectedProduct = JSON.parse(localStorage.getItem("selectedProduct"));
 
+if (JSON.parse(localStorage.getItem("counter") === null)) {
+  const cnt = 0;
+  localStorage.setItem("counter", JSON.stringify(cnt));
+} else {
+  document.querySelector(".header__counter").textContent = JSON.parse(
+    localStorage.getItem("counter")
+  );
+}
+
+document.getElementById('min-price').addEventListener('input', function() {
+  this.value = this.value.replace(/[^0-9]/g, ''); // Заменяем все символы, кроме цифр, на пустую строку
+});
+
+document.getElementById('max-price').addEventListener('input', function() {
+  this.value = this.value.replace(/[^0-9]/g, ''); // Заменяем все символы, кроме цифр, на пустую строку
+});
+
+const contacts = document.querySelector(".header__li-element_contacts");
+const headerCheckbox = document.querySelector(".header__checkbox");
+contacts.addEventListener("click", () => {
+  headerCheckbox.checked = false;
+});
+const logoHeader = document.querySelector(".logo_header");
+logoHeader.addEventListener("click", () => {
+  window.location.href = "./index.html";
+});
+
 const headerBag = document.querySelector(".header__bag");
 headerBag.addEventListener("click", () => {
   window.location.href = "./korzina.html";
@@ -13,6 +40,13 @@ let currentElements = [];
 let checkedEl = "all";
 let minCurCost = 0;
 let maxCurCost = 10000000;
+
+if (selectedProduct) {
+  const form = document.querySelector(".radio-group");
+  const radio = document.querySelector(`#${selectedProduct}`);
+  radio.checked = true;
+  checkedEl = selectedProduct;
+}
 
 const cards = [
   {
@@ -217,56 +251,65 @@ if (!localStorage.getItem("items")) {
   cards.forEach((card) => {
     let items = JSON.parse(localStorage.getItem("items"));
     console.log(items);
-    items.push({ name: card.title, quantity: 0, image: card.image, title: card.title, cost: card.cost });
+    items.push({
+      name: card.title,
+      quantity: 0,
+      image: card.image,
+      title: card.title,
+      cost: card.cost,
+      kolvo: card.kolvo,
+    });
     localStorage.setItem("items", JSON.stringify(items));
-    console.log(card.title, card.cost)
+    console.log(card.title, card.cost);
   });
 }
 
 cards.forEach((cardEl, i) => {
-  const container = document.querySelector(".product-template").content;
-  const card = container.querySelector(".product-card").cloneNode(true);
-  const image = card.querySelector(".product-image");
-  image.src = cardEl.image;
-  image.alt = cardEl.type;
-  const title = card.querySelector(".product-title");
-  title.textContent = cardEl.title;
-  const text = card.querySelector(".product-text");
-  text.textContent = cardEl.description;
-  const cost = card.querySelector(".product-cost");
-  cost.textContent = cardEl.cost;
-  const kolvo = card.querySelector(".product-kolvo");
-  kolvo.textContent = cardEl.kolvo;
-  const button = card.querySelector(".product-button");
-  button.addEventListener("click", () => {
-    if (localStorage.getItem("items")) {
-      let items = JSON.parse(localStorage.getItem("items"));
-      let cnt = JSON.parse(localStorage.getItem("counter"));
-      items.forEach((item) => {
-        if (title.textContent == item.name) {
-          item.quantity = item.quantity + 1;
-          cnt = cnt + 1;
-          document.querySelector(".header__counter").textContent = cnt;
-          console.log(document.querySelector(".header__counter").textContent);
-          console.log(cnt)
-        }
-      });
-      localStorage.setItem("items", JSON.stringify(items));
-      localStorage.setItem("counter", JSON.stringify(cnt)); // Сохраняем информацию о покупке в localStorage
-    }
-  });
+  if (cardEl.type === checkedEl || "all" === checkedEl) {
+    const container = document.querySelector(".product-template").content;
+    const card = container.querySelector(".product-card").cloneNode(true);
+    const image = card.querySelector(".product-image");
+    image.src = cardEl.image;
+    image.alt = cardEl.type;
+    const title = card.querySelector(".product-title");
+    title.textContent = cardEl.title;
+    const text = card.querySelector(".product-text");
+    text.textContent = cardEl.description;
+    const cost = card.querySelector(".product-cost");
+    cost.textContent = cardEl.cost;
+    const kolvo = card.querySelector(".product-kolvo");
+    kolvo.textContent = cardEl.kolvo;
+    const button = card.querySelector(".product-button");
+    button.addEventListener("click", () => {
+      if (localStorage.getItem("items")) {
+        let items = JSON.parse(localStorage.getItem("items"));
+        let cnt = JSON.parse(localStorage.getItem("counter"));
+        items.forEach((item) => {
+          if (title.textContent == item.name) {
+            item.quantity = item.quantity + 1;
+            cnt = cnt + 1;
+            document.querySelector(".header__counter").textContent = cnt;
+            console.log(document.querySelector(".header__counter").textContent);
+            console.log(cnt);
+          }
+        });
+        localStorage.setItem("items", JSON.stringify(items));
+        localStorage.setItem("counter", JSON.stringify(cnt)); // Сохраняем информацию о покупке в localStorage
+      }
+    });
 
-  console.log(card);
+    console.log(card);
 
-  inside.append(card);
-  currentElements.push(card);
+    inside.append(card);
+    currentElements.push(card);
+  }
 });
 
 const render = (id) => {
-    const elements = inside.querySelectorAll(".product-card");
-    for (let i = 0; i < elements.length; i++) {
-      elements[i].parentNode.removeChild(elements[i]); // удаление объекта
-    }
+  const elements = inside.querySelectorAll(".product-card");
+  for (let i = 0; i < elements.length; i++) {
+    elements[i].parentNode.removeChild(elements[i]); // удаление объекта
+  }
   currentElements.length = 0;
 
   cards.forEach((cardEl) => {
@@ -303,7 +346,7 @@ const render = (id) => {
             }
           });
           localStorage.setItem("items", JSON.stringify(items));
-          localStorage.setItem("counter", JSON.stringify(cnt)); // Сохраняем информацию о покупке в localStorage
+          localStorage.setItem("counter", JSON.stringify(cnt));
         }
       });
 
@@ -318,12 +361,6 @@ const render = (id) => {
 };
 
 console.log(selectedProduct);
-
-if (selectedProduct) {
-  const form = document.querySelector(".radio-group");
-  const radio = document.querySelector(`#${selectedProduct}`);
-  radio.checked = true;
-}
 
 const checkboxes = document.querySelectorAll(".panel-ch");
 checkboxes.forEach((checkbox) => {
@@ -343,21 +380,28 @@ minPriceInput.addEventListener("keyup", () => {
   }
   currentElements.length = 0;
 
+  minCurCost = parseInt(minPriceInput.value);
+
+  if (minPriceInput.value === "") {
+    minCurCost = 0;
+  }
+
   cards.forEach((cardEl) => {
     console.log(
       (cardEl.type == checkedEl || checkedEl == "all") &&
-        cardEl.cost >= parseInt(minPriceInput.value) &&
+        cardEl.cost >= minCurCost &&
         cardEl.cost <= maxCurCost
     );
+
     if (
       ((cardEl.type == checkedEl || checkedEl == "all") &&
-        cardEl.cost >= parseInt(minPriceInput.value) &&
+        cardEl.cost >= minCurCost &&
         cardEl.cost <= maxCurCost) ||
       (minPriceInput.value == "" &&
         maxPriceInput.value == "" &&
         checkedEl == cardEl.type)
     ) {
-      console.log(maxCurCost);
+      console.log(minCurCost, cardEl);
       const container = document.querySelector(".product-template").content;
       const card = container.querySelector(".product-card").cloneNode(true);
       const image = card.querySelector(".product-image");
@@ -426,12 +470,18 @@ maxPriceInput.addEventListener("keyup", () => {
   }
   currentElements.length = 0;
 
+  maxCurCost = parseInt(maxPriceInput.value);
+
+  if (maxPriceInput.value == "") {
+    maxCurCost = 9999999;
+  }
+
   cards.forEach((cardEl) => {
     console.log(checkedEl);
     console.log(maxCurCost);
     if (
       ((cardEl.type == checkedEl || checkedEl == "all") &&
-        cardEl.cost <= parseInt(maxPriceInput.value) &&
+        cardEl.cost <= maxCurCost &&
         cardEl.cost >= minCurCost) ||
       (maxPriceInput.value == "" &&
         minPriceInput.value == "" &&

@@ -6,8 +6,23 @@
     width: 90%;
     margin-left: 5%;
     grid-template-columns: 1fr;
-    grid-template-rows: 80px minmax(500px, auto) 70px;
+    grid-template-rows: 8fr minmax(20fr, auto) 7fr;
     justify-items: center;
+    border: 3px solid rgba(0, 0, 0, 0.127);
+    border-radius: 25px;
+}
+
+.purchase__button{
+    all: unset;
+    background-color: rgba(246, 246, 246, 0.433);
+    border-radius: 3px;
+    border: solid 2px;
+    width: 120px;
+    font-family: "Unbounded";
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    margin-right: 20px;
 }
 
 .purchase__header{
@@ -18,6 +33,10 @@
     background-color: antiquewhite;
     border-radius: 20px 20px 0 0;
     padding-bottom: 30px;
+}
+
+.purchase__button{
+    cursor: pointer;
 }
 
 .purchase__delete-card{
@@ -32,10 +51,12 @@
     line-height: 14px;
     text-align: center;
     margin-right: 15px;
+    cursor: pointer;
 }
 
 .purchase__title{
     margin-left: 15px;
+    margin-right: 35px;
     font-family: "Unbounded";
     font-size: 24px;
     line-height: 28px;
@@ -57,6 +78,18 @@
     /* border: 3px solid black; */
     display: -ms-grid;
     display: grid;
+}
+
+.purchase__box2{
+    padding-top: 7px;
+
+}
+
+@media all and (max-width:900px){
+    .purchase__box2{
+        padding-top: 0;
+    
+    }
 }
 
 .purchase__image{
@@ -95,19 +128,30 @@
 }
 
 .purchase__total{
+    margin: 0;
+    display: inline-block;
     font-size: 24px;
     line-height: 28px;
     text-align: center;
 }
 
+.purchase__box{
+    text-align: center;
+}
+
 .purchase__end{
    padding: 20px;
+   box-sizing: border-box;
 }
 
 .purchase__all{
     margin: 0;
     font-size: 24px;
     line-height: 28px;
+}
+
+.purchase__delete{
+    cursor: pointer;
 }
 
 .purchase__end{
@@ -123,6 +167,7 @@
     .purchase__card{
         width: 100%;
         height: 400px;
+        align-items: center;
         grid-template-columns: repeat(6, 1fr);
         grid-template-rows: 2fr;
         /* border: 3px solid black; */
@@ -132,8 +177,82 @@
         grid-column: 1 / span 3;
     }
     .purchase__image{
-        width: 100%;
+        width: 70%;
+        aspect-ratio: 2/1;
         margin-top: 20px ;
-        grid-column: 3 / span 2;
+        margin-left:25%;
+        margin-right:10%;
+        grid-column: 1 / span 5;
+    }
+}
+
+@media all and (max-width: 600px){
+    .purchase__delete{
+        font-size: 16px;
+        line-height: 18px;
+    }
+    .purchase__cost{
+        font-size: 18px;
+        line-height: 23px;
+        justify-self: center;
+    }
+    .purchase__count{
+        font-size: 18px;
+        line-height: 23px;
+        justify-self: center;
+    }
+    .purchase__total{
+        font-size: 18px;
+        line-height: 23px;
+        justify-self: center;
+    }
+}
+
+@media all and (max-width: 450px){
+    .purchase{
+        width: 100%;
+    }
+    .purchase__card{
+        height: auto;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 4fr 2fr 1fr;
+        font-size: 12px;
+        line-height: 14px;
+    }
+    .purchase__name{
+        font-size: 24px;
+        line-height: 24px;
+    }
+    .purchase__delete{
+        font-size: 16px;
+        line-height: 18px;
+    }
+    .purchase__cost{
+        font-size: 22px;
+        line-height: 26px;
+        justify-self: center;
+    }
+    .purchase__count{
+        font-size: 22px;
+        line-height: 26px;
+        justify-self: center;
+    }
+    .purchase__total{
+        font-size: 22px;
+        line-height: 26px;
+    }
+    .purchase__box{
+        text-align: center;
+    }
+    .purchase__description{
+        grid-column: 1 / span 4;
+    }
+    .purchase__image{
+        aspect-ratio: 1/1;
+        margin-top: 20px ;
+        margin-left:10%;
+        margin-right:10%;
+        grid-column: 1 / span 3;
+        object-fit: border-box;
     }
 }

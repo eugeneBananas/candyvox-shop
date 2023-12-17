@@ -10,3 +10,13 @@
     aspect-ratio: 1184/640;
     overflow: hidden;
 }
+
+
+@media all and (max-width: 650px){
+    .info{
+        margin-left: 0;
+        aspect-ratio: initial;
+        height: 70vh;
+        width: 100%;
+    }
+}

@@ -100,3 +100,9 @@
         justify-self: center;
     }
 }
+
+@media all and (max-width: 420px){
+    .gallery{
+        padding: 20px;
+    }
+}

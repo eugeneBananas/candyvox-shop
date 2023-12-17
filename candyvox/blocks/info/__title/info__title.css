@@ -24,14 +24,14 @@
     }
 }
 
-@media all and (max-width: 670px){
+@media all and (max-width: 650px){
     .info__title{
-        font-size: 32px;
-        line-height: 36px;
+        font-size: 36px;
+        line-height: 40px;
     }
 }
 
-@media all and (max-width: 520px){
+/* @media all and (max-width: 520px){
     .info__title{
         font-size: 18px;
         line-height: 22px;
@@ -43,4 +43,4 @@
         font-size: 14px;
         line-height: 18px;
     }
-}
+} */

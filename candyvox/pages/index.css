@@ -42,7 +42,6 @@
 @import url(../blocks/info/__sheet/info__sheet.css);
 
 @import url(../blocks/gallery/gallery.css);
-@import url(../blocks/gallery/__sheet/gallery__sheet.css);
 @import url(../blocks/gallery/__card/gallery__card.css);
 @import url(../blocks/gallery/__rectangle/gallery__rectangle.css);
 @import url(../blocks/gallery/__text/gallery__text.css);
@@ -64,3 +63,5 @@
 @import url(../blocks/register/register.css);
 
 @import url(../blocks/cards/cards.css);
+
+@import url(../blocks/test/test.css);

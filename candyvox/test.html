@@ -6,73 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Candyvox</title>
   <link rel="stylesheet" href="./pages/index.css">
-  <style>
-    body {
-      display: flex;
-      align-items: center;
-      flex-direction: column;
-      height: 100vh;
-      margin: 0;
-    }
-
-    #quizContainer {
-      border: 2px solid #ccc;
-      padding: 20px;
-      background-color: rgba(255, 255, 255, 0.7);
-    }
-
-    #quizForm {
-      background-size: 300% 300%;
-      background-image: linear-gradient(-45deg, rgba(255, 255, 0, 0.719) 0%, rgba(115, 255, 0, 0.829) 25%, rgba(0, 191, 255, 0.774) 51%, #ff357fc0 100%);
-      -webkit-animation: AnimateBG 20s ease infinite;
-      animation: AnimateBG 20s ease infinite;
-      padding: 40px;
-      font-family: "Unbounded";
-      font-size: 64px;
-      line-height: 72px;
-    }
-
-    .question {
-      margin-bottom: 20px;
-    }
-
-    .title-test {
-      font-family: "Unbounded";
-      font-size: 64px;
-      line-height: 72px;
-      margin-bottom: 40px;
-      margin-top: 120px;
-      padding: 20px;
-      background-size: 300% 300%;
-      background-image: linear-gradient(-45deg, rgba(255, 255, 0, 0.719) 0%, rgba(115, 255, 0, 0.829) 25%, rgba(0, 191, 255, 0.774) 51%, #ff357fc0 100%);
-      -webkit-animation: AnimateBG 20s ease infinite;
-      animation: AnimateBG 20s ease infinite;
-      border-radius: 12px;
-    }
-
-    #result {
-      margin: 10px;
-      font-size: 32px;
-      line-height: 36px;
-    }
-
-    .radiobutton {
-      aspect-ratio: 1/1;
-      width: 40px;
-    }
-
-    @media all and (max-width: 650px) {
-      .title-test {
-        font-size: 40px;
-        line-height: 42px;
-      }
-
-      #quizForm {
-        font-size: 32px;
-        line-height: 36px;
-      }
-    }
-  </style>
 </head>
 
 <body class="root">
@@ -86,10 +19,10 @@
           <span class="header__line header__line3"></span>
         </div>
         <div class="header__menu-items">
-          <li class="header__li-element"><a class="header__link-element" href="#">Home</a></li>
-          <li class="header__li-element"><a class="header__link-element" href="#">About</a></li>
-          <li class="header__li-element"><a class="header__link-element" href="#">Text</a></li>
-          <li class="header__li-element"><a class="header__link-element" href="#">Contacts</a></li>
+          <li class="header__li-element"><a class="header__link-element" href="./Login.html">Вход</a></li>
+          <li class="header__li-element"><a class="header__link-element" href="./test.html">Тест</a></li>
+          <li class="header__li-element"><a class="header__link-element" href="./cards.html">Товары</a></li>
+          <li class="header__li-element header__li-element_contacts"><a class="header__link-element" href="#contacts">Контакты</a></li>
         </div>
       </div>
 
@@ -99,15 +32,6 @@
         <img class="logo__vector" src="./images/Vector7.svg">
       </div>
     </div>
-
-    <!-- <nav class="header__navigation">
-            <a class="header__nav-text" link="#">Home</a>
-            <a class="header__nav-text" link="#">Shop</a>
-            <a class="header__nav-text" link="#">Faq's</a>
-            <a class="header__nav-text" link="#">Stockists</a>
-            <a class="header__nav-text" link="#">Wholesale</a>
-            <a class="header__nav-text" link="#">Contact</a>
-        </nav> -->
 
     <div class="header__search">
       <div class="header__container">
@@ -145,49 +69,32 @@
       <div><input class="radiobutton" type="radio" id="q3c" name="q3" value="c"> <label for="q3c">Читаю книги</label>
       </div>
     </div>
-    <button type="button" onclick="submitQuiz()">Проверить</button>
+    <button type="button" class="quiz__check">Проверить</button>
   </form>
 
   <div id="result" style="display: none;">
-    <h2>Your Sweetness Character:</h2>
+    <h2>Ваш характер сладкоежки:</h2>
     <p id="resultText"></p>
   </div>
 
-  <script>
-    const form = document.getElementById('quizForm');
-    const result = document.getElementById('result');
-    const resultText = document.getElementById('resultText');
+  <footer class="footer" id="contacts">
+    <div class="footer__contacts">
+      <h3 class="footer__title">Контакты</h3>
+      <p class="footer__text">7-900-000-00-00</p>
+    </div>
+    <div class="footer__sn">
+      <h3 class="footer__title">Социальные сети</h3>
+      <a href="#" class="footer__text">ВКонтакте</a>
+      <a href="#" class="footer__text">Telegram</a>
+      <a href="#" class="footer__text">Facebook</a>
+    </div>
+    <div class="footer__creator">
+      <h3 class="footer__title">Создатель</h3>
+      <p clsas="footer__text">Ряполов Е.М. ИКБО-30-22</p>
+    </div>
+  </footer>
 
-    console.log(form, result, resultText)
-
-    let sweetnessType = '';
-
-
-    const submitQuiz = () => {
-      const answers = {
-        q1: form.q1.value,
-        q2: form.q2.value,
-        q3: form.q3.value
-      }
-
-      if (answers.q1 === 'a' && answers.q2 === 'a' && answers.q3 === 'a') {
-        sweetnessType = 'You are a chocolate lover!'
-      }
-      else if (answers.q1 === 'b' && answers.q2 === 'b' && answers.q3 === 'b') {
-        sweetnessType = 'You are an adventurous spirit!';
-      }
-      else if (answers.q1 === 'c' && answers.q2 === 'c' && answers.q3 === 'c') {
-        sweetnessType = 'You are a calm and collected individual!';
-      }
-      else {
-        sweetnessType = 'You have a mix of sweet characteristics!';
-      }
-
-      resultText.textContent = sweetnessType;
-      result.style.display = 'block';
-    }
-  </script>
+  <script src="./test.js"></script>
 </body>
-<script src="./text.js"></script>
 
 </html>

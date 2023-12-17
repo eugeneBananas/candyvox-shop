@@ -8,6 +8,7 @@
 
   .section
 {
+  z-index: 11000;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -54,6 +55,16 @@ section .color:nth-child(3)
 .box
 {
   position: relative;
+}
+
+.span-inpt{
+  font-family: "Unbounded";
+  color: rgb(234, 193, 193);
+  margin-bottom: 100px;
+}
+
+.invis-inpt{
+  display: none;
 }
 
 .box .square

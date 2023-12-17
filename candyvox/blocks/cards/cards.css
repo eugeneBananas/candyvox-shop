@@ -4,10 +4,6 @@
     margin-top: 100px;
 }
 
-.choose__radiobutton{
-
-}
-
   .panel {
     font-family: "Unbounded";
     font-size: 12px;
@@ -139,6 +135,7 @@
   }
 
   .product-button{
+    cursor: pointer;
     border-radius: 3px;
     border: 3px solid #ffffff;
     background-color: white;
@@ -164,5 +161,12 @@
     font-size: 24px;
     line-height: 26px;
     width: 100%;
+    }
+  }
+
+  @media all and (max-width: 420px){
+    .product-card  {
+      font-size: 14px;
+      line-height: 16px;
     }
   }

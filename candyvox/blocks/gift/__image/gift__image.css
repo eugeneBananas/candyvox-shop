@@ -4,10 +4,3 @@
     width: 400px;
     border-radius: 30px;
 }
-
-
-@media all and (max-width: 720px){
-    .gift__image{
-        
-    }
-}
